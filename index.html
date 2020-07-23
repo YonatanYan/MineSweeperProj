@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="initGame()">
+    <button class="smiley" onclick="initGame()">😀</button>
+    <br>
+    <p class="difficulty">
+        <button onclick="setLevel(1)">Easy</button>
+        <button onclick="setLevel(2)">Normal</button>
+        <button onclick="setLevel(3)">Hard</button>
+    </p>
+    <h5>Seconds passed: <span class="time-passed"> 0 </span></h5>
+    <br>
+    <div>
+        <table>
+            <tbody class="matrice" oncontextmenu="return false"></tbody>
+        </table>
+    </div>
+</body>
+<script src="sweeper.js"></script>
+
+</html>
